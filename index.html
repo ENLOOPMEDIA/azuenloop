@@ -7,7 +7,7 @@
     <meta name="keywords" content="blog cine, carrie bradshaw estilo, teoria del color, azu en loop">
     <meta name="author" content="Azul">
     
-    <title> En Loop</title>
+    <title>En Loop</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -80,34 +80,7 @@
         }
         @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 
-        /* --- TÍTULO Y LOOP --- */
-        h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 85px;
-            margin: 0;
-            line-height: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px; 
-            flex-wrap: wrap; 
-        }
-        .contenedor-loop {
-            position: relative;
-            width: 300px; height: 160px;
-            display: flex; align-items: center; justify-content: center;
-            margin-top: 10px;
-        }
-        .flechas-svg {
-            position: absolute; width: 100%; height: 100%;
-            fill: #D34E4E; z-index: 1; transform: scale(1.2); opacity: 0.9;
-        }
-        .texto-loop {
-            position: relative; z-index: 2;
-            font-family: 'Playfair Display', serif; font-size: 65px;
-            font-weight: 700; font-style: italic; color: #000050; 
-        }
-
+        /* --- BAJADA Y BOTÓN --- */
         .bajada { font-size: 22px; font-weight: 300; margin-top: 30px; margin-bottom: 50px; font-style: italic; }
 
         .boton {
@@ -118,12 +91,12 @@
         }
         .boton:hover { transform: scale(1.05); background-color: #b03030; }
 
-        /* --- ESTILO INSTAGRAM PARA EL BLOG (FOTOS) --- */
-        #blog img {
-            display: block; width: 100%; max-width: 450px;
-            aspect-ratio: 1 / 1; object-fit: cover;
-            border-radius: 8px; margin: 0 auto 30px auto;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        /* --- ESTILOS DEL ARTÍCULO --- */
+        details > summary {
+            list-style: none; /* Saca el triangulito por defecto de algunos navegadores */
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
         }
     </style>
 </head>
@@ -147,17 +120,16 @@
             </div>
         </div>
         
-        <header style="text-align: center; padding: 60px 20px;">
-    <h1 style="font-family: 'Playfair Display', serif; font-size: 5rem; line-height: 0.9; margin: 0;">
-        <span style="display: block; color: #000050;">EN</span>
-        
-        <span style="display: block; color: #D34E4E;">LOOP</span>
-    </h1>
-    
-    <p style="font-family: sans-serif; color: #666; font-size: 1rem; letter-spacing: 2px; margin-top: 20px; text-transform: uppercase;">
-        Análisis Visual & Cultura Pop
-    </p>
-</header>
+        <header style="text-align: center; padding: 20px;">
+            <h1 style="font-family: 'Playfair Display', serif; font-size: 5rem; line-height: 0.9; margin: 0;">
+                <span style="display: block; color: #000050;">EN</span>
+                <span style="display: block; color: #D34E4E;">LOOP</span>
+            </h1>
+            
+            <p style="font-family: sans-serif; color: #666; font-size: 1rem; letter-spacing: 2px; margin-top: 20px; text-transform: uppercase;">
+                Análisis Visual & Cultura Pop
+            </p>
+        </header>
         
         <p class="bajada">Un laboratorio de historias que vuelven.</p>
         <a href="#blog" class="boton">Entrar al Loop</a>
@@ -167,70 +139,71 @@
         <div style="max-width: 700px; margin: 0 auto; text-align: left;">
             <h2 style="font-family: 'Playfair Display', serif; font-size: 40px; color: #D34E4E; text-align: center; margin-bottom: 60px;">Bitácora Visual</h2>
 
+            <article style="max-width: 100%; margin: 40px auto; padding-bottom: 40px; font-family: sans-serif; border-bottom: 1px solid #E8C3C3;">
+
+                <img src="Carrie.jpg" alt="Carrie Bradshaw escribiendo" style="width: 100%; height: auto; display: block; margin-bottom: 30px; border-radius: 4px;">
+
+                <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; color: #000050; line-height: 1.1; margin-bottom: 20px;">
+                    El Efecto Carrie: ¿Villana o Anti-Heroína?
+                </h2>
+
+                <p style="font-size: 1.1rem; font-style: italic; color: #666; margin-bottom: 20px; border-left: 4px solid #D34E4E; padding-left: 15px;">
+                    Entre Manolos y columnas sobre sexo, Sex and the City nos vendió la sororidad perfecta. Pero hoy, una pregunta incómoda nos persigue: ¿es Carrie Bradshaw la verdadera villana de la historia?
+                </p>
+
+                <details>
+                    <summary style="cursor: pointer; color: #D34E4E; font-weight: bold; font-family: sans-serif; text-transform: uppercase; letter-spacing: 2px; padding: 10px 0; outline: none;">
+                        ▼ LEER ARTÍCULO COMPLETO
+                    </summary>
+                    
+                    <div style="margin-top: 20px; color: #333; line-height: 1.8; font-size: 1rem;">
+                        
+                        <p><strong>Carrie Bradshaw</strong>, la protagonista de la icónica serie <em>Sex and the City</em>, nos presentó una historia que giraba alrededor de cuatro amigas lidiando con el amor, la amistad y el éxito en Nueva York. En los 90, era el estandarte de la mujer independiente. Sin embargo, hoy, bajo la lupa de la cultura actual, la lectura es muy distinta: <strong>se la percibe como una persona tóxica y profundamente narcisista.</strong></p>
+
+                        <h4 style="color: #000050; margin-top: 30px; font-family: 'Playfair Display', serif; font-size: 1.5rem;">La obsesión por el caos (y Mr. Big)</h4>
+                        
+                        <p>Su fijación con Mr. Big —un hombre emocionalmente no disponible— no solo saboteó sus relaciones, sino que irritó al público. Sobre todo cuando engañó a Aidan, "la pareja ideal", y luego intentó forzar una amistad absurda entre los dos.</p>
+                        
+                        <p>Carrie es lo que hoy llamaríamos una <strong>"migajera"</strong>: Big nunca tuvo un compromiso real; para él, ella era un capricho. Ella intentaba moldearse para encajar en su vida, en un esfuerzo tan agotador como inútil.</p>
+                        
+                        <p>Cuando finalmente logra emparejarse con alguien sano (Aidan), lo engaña. Y no como venganza, sino <strong>por puro aburrimiento</strong>. Estaba tan acostumbrada a la adrenalina tóxica de Big que la estabilidad le resultaba insoportable.</p>
+
+                        <h4 style="color: #000050; margin-top: 30px; font-family: 'Playfair Display', serif; font-size: 1.5rem;">"Y volviendo a mí..."</h4>
+
+                        <p>Carrie tiene una habilidad olímpica para desviar cualquier conversación hacia sus crisis. Mientras Miranda hablaba de su carrera o Samantha de su cáncer, Carrie siempre encontraba un "puente" para hablar de Big.</p>
+                        
+                        <p>A pesar de ser "sexóloga", resultaba sorprendentemente <strong>juzgona</strong>. Un ejemplo clave es cuando avergonzó a Samantha por una situación íntima en su oficina. Esto enfureció a la audiencia, ya que Samantha siempre fue la amiga más leal y jamás juzgó a Carrie.</p>
+
+                        <h4 style="color: #000050; margin-top: 30px; font-family: 'Playfair Display', serif; font-size: 1.5rem;">El veredicto final</h4>
+
+                        <p>Quizá el mayor "pecado" de Carrie no fue ser tóxica, sino <strong>tener la audacia de ser mediocre y fascinante al mismo tiempo</strong>.</p>
+                        
+                        <p>La odiamos porque nos devuelve un reflejo de nuestras propias neurosis. Estamos acostumbrados a perdonar a hombres egoístas como <strong>Don Draper</strong> o <strong>Tony Soprano</strong>, celebrándolos como "complejos". Pero a las mujeres se les exige ser "agradables".</p>
+                        
+                        <p>El rechazo a Carrie nace de que es una mujer <strong>profundamente imperfecta</strong>. Y tal vez, solo tal vez, eso es lo que la hace tan real.</p>
+                        
+                        <br>
+                        <p style="text-align: center; font-style: italic; font-size: 0.9rem; color: #888;">Texto por: En Loop Media</p>
+                    </div>
+                </details>
+
+            </article>
             </div>
     </div>
-    <article style="max-width: 800px; margin: 40px auto; padding: 20px; font-family: sans-serif; border-bottom: 1px solid #E8C3C3;">
 
-    <img src="carrie.jpg" alt="Carrie Bradshaw escribiendo" style="width: 100%; height: auto; display: block; margin-bottom: 30px; border-radius: 4px;">
-
-    <h2 style="font-family: 'Playfair Display', serif; font-size: 3rem; color: #000050; line-height: 1.1; margin-bottom: 20px;">
-        El Efecto Carrie: ¿Villana o Anti-Heroína?
-    </h2>
-
-    <p style="font-size: 1.3rem; font-style: italic; color: #666; margin-bottom: 20px; border-left: 4px solid #D34E4E; padding-left: 15px;">
-        Entre Manolos y columnas sobre sexo, Sex and the City nos vendió la sororidad perfecta. Pero hoy, una pregunta incómoda nos persigue: ¿es Carrie Bradshaw la verdadera villana de la historia?
-    </p>
-
-    <details>
-        <summary style="cursor: pointer; color: #D34E4E; font-weight: bold; font-family: sans-serif; text-transform: uppercase; letter-spacing: 2px; list-style: none; padding: 10px 0;">
-            ▼ LEER ARTÍCULO COMPLETO
-        </summary>
+    <footer style="background-color: #F9F5F3; color: #000050; padding: 40px 20px; text-align: center; border-top: 1px solid #E8C3C3;">
         
-        <div style="margin-top: 20px; color: #333; line-height: 1.8; font-size: 1.1rem;">
-            
-            <p><strong>Carrie Bradshaw</strong>, la protagonista de la icónica serie <em>Sex and the City</em>, nos presentó una historia que giraba alrededor de cuatro amigas lidiando con el amor, la amistad y el éxito en Nueva York. En los 90, era el estandarte de la mujer independiente. Sin embargo, hoy, bajo la lupa de la cultura actual, la lectura es muy distinta: <strong>se la percibe como una persona tóxica y profundamente narcisista.</strong></p>
+        <h4 style="font-family: 'Playfair Display', serif; margin-bottom: 20px; letter-spacing: 1px;">EN LOOP</h4>
 
-            <h4 style="color: #000050; margin-top: 30px; font-family: 'Playfair Display', serif; font-size: 1.5rem;">La obsesión por el caos (y Mr. Big)</h4>
-            
-            <p>Su fijación con Mr. Big —un hombre emocionalmente no disponible— no solo saboteó sus relaciones, sino que irritó al público. Sobre todo cuando engañó a Aidan, "la pareja ideal", y luego intentó forzar una amistad absurda entre los dos.</p>
-            
-            <p>Carrie es lo que hoy llamaríamos una <strong>"migajera"</strong>: Big nunca tuvo un compromiso real; para él, ella era un capricho. Ella intentaba moldearse para encajar en su vida, en un esfuerzo tan agotador como inútil.</p>
-            
-            <p>Cuando finalmente logra emparejarse con alguien sano (Aidan), lo engaña. Y no como venganza, sino <strong>por puro aburrimiento</strong>. Estaba tan acostumbrada a la adrenalina tóxica de Big que la estabilidad le resultaba insoportable.</p>
+        <a href="https://www.instagram.com/enloop.media" target="_blank" style="text-decoration: none; color: #D34E4E; font-family: sans-serif; font-weight: bold; font-size: 0.9rem; letter-spacing: 2px; border: 1px solid #D34E4E; padding: 10px 20px; display: inline-block; transition: all 0.3s;">
+            SÍGUENOS EN INSTAGRAM
+        </a>
 
-            <h4 style="color: #000050; margin-top: 30px; font-family: 'Playfair Display', serif; font-size: 1.5rem;">"Y volviendo a mí..."</h4>
+        <p style="font-family: sans-serif; font-size: 0.7rem; color: #666; margin-top: 30px;">
+            &copy; 2026 En Loop Media. Todos los derechos reservados.
+        </p>
 
-            <p>Carrie tiene una habilidad olímpica para desviar cualquier conversación hacia sus crisis. Mientras Miranda hablaba de su carrera o Samantha de su cáncer, Carrie siempre encontraba un "puente" para hablar de Big.</p>
-            
-            <p>A pesar de ser "sexóloga", resultaba sorprendentemente <strong>juzgona</strong>. Un ejemplo clave es cuando avergonzó a Samantha por una situación íntima en su oficina. Esto enfureció a la audiencia, ya que Samantha siempre fue la amiga más leal y jamás juzgó a Carrie.</p>
+    </footer>
 
-            <h4 style="color: #000050; margin-top: 30px; font-family: 'Playfair Display', serif; font-size: 1.5rem;">El veredicto final</h4>
-
-            <p>Quizá el mayor "pecado" de Carrie no fue ser tóxica, sino <strong>tener la audacia de ser mediocre y fascinante al mismo tiempo</strong>.</p>
-            
-            <p>La odiamos porque nos devuelve un reflejo de nuestras propias neurosis. Estamos acostumbrados a perdonar a hombres egoístas como <strong>Don Draper</strong> o <strong>Tony Soprano</strong>, celebrándolos como "complejos". Pero a las mujeres se les exige ser "agradables".</p>
-            
-            <p>El rechazo a Carrie nace de que es una mujer <strong>profundamente imperfecta</strong>. Y tal vez, solo tal vez, eso es lo que la hace tan real.</p>
-            
-            <br>
-            <hr style="border: 0; border-top: 1px solid #ddd;">
-            <p style="text-align: center; font-style: italic; font-size: 0.9rem; color: #888;">Texto por: En Loop Media</p>
-        </div>
-    </details>
-
-</article>
-
-</body><footer style="background-color: #F9F5F3; color: #000050; padding: 40px 20px; text-align: center; margin-top: 60px; border-top: 1px solid #E8C3C3;">
-    
-    <h4 style="font-family: 'Playfair Display', serif; margin-bottom: 20px; letter-spacing: 1px;">EN LOOP</h4>
-
-    <a href="https://www.instagram.com/enloop.media" target="_blank" style="text-decoration: none; color: #D34E4E; font-family: sans-serif; font-weight: bold; font-size: 0.9rem; letter-spacing: 2px; border: 1px solid #D34E4E; padding: 10px 20px; display: inline-block; transition: all 0.3s;">
-        SÍGUENOS EN INSTAGRAM
-    </a>
-
-    <p style="font-family: sans-serif; font-size: 0.7rem; color: #666; margin-top: 30px;">
-        &copy; 2026 En Loop Media. Todos los derechos reservados.
-    </p>
-
-</footer>
+</body>
 </html>
